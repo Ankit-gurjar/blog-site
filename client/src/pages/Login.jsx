@@ -9,7 +9,7 @@ import loginImage from "../photos/login.jpg";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import Cookies from "js-cookie";
-import backendurl from "../url";
+// import backendurl from "../url";
 
 const Login = () => {
   const navigate = useNavigate();
