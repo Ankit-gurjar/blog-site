@@ -1,5 +1,5 @@
 const express = require("express");
-const prouter = express.Router();
+const router = express.Router();
 const {
   Signup,
   Login,
