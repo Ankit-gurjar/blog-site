@@ -9,6 +9,7 @@ import loginImage from "../photos/login.jpg";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import Cookies from "js-cookie";
+import backendurl from "../url";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -38,15 +39,19 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_APP_BACKEND}/login`,
+        `${backendurl}/login`,
         { ...inputValue },
         { withCredentials: true }
       );
       const { data } = response;
       if (data.success) {
         // Save the token using js-cookie
-        Cookies.set("token", data.token, { expires: 7, secure: true, sameSite: 'None', httpOnly:false }); // Save for 7 days
-
+        Cookies.set("token", data.token, {
+          expires: 7,
+          secure: true,
+          sameSite: "None",
+          httpOnly: false,
+        }); // Save for 7 days
 
         handleSuccess(data.message);
         setTimeout(() => {
