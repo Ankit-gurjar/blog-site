@@ -1,0 +1,90 @@
+.title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+
+
+/* User interaction section styling, including likes and comments indicators */
+.user-interaction-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add some space before the comment section */
+}
+
+.user-info, .like-comment-count {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name, .post-date {
+  font-size: 16px;
+}
+
+/* Icons for like and comment, adjust margins for alignment */
+.icon, .icon-text {
+  margin: 0 5px;
+}
+
+.like-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* Default color for not liked */
+}
+
+.liked {
+  color: #e0245e; /* Color when liked */
+}
+
+.like-icon:hover {
+  color: #e0245e; /* Lighten the color on hover */
+}
+
+/* Comment Section */
+
+.comment {
+  background: #f9f9f9;
+  border-radius: 10px;
+  border-bottom: 1px solid #eee; /* Optional: if you prefer a border bottom for each comment */
+}
+
+.add-comment {
+  margin-top: 15px;
+}
+
+/* Adjust input field size */
+.comment-section .form-control {
+  border-radius: 20px;
+  padding: 7px 20px; /* Reduced padding for a smaller input field */
+  font-size: 14px; /* Adjust font size if necessary */
+  margin-bottom: 10px; /* Space between input field and submit button */
+}
+
+.comment-section .btn-primary {
+  border-radius: 20px;
+  padding: 7px 15px; /* Adjusted for a more compact button */
+  font-size: 14px;
+}
+
+/* Add margin at the bottom of the comment section for spacing to the end of the page */
+.comment-section {
+  margin-bottom: 30px; /* Adjust as needed for your design */
+}
+
+
+.blog-post-content{
+  font: optional;
+}
