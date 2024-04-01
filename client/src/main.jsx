@@ -5,7 +5,7 @@ import "./index.css";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 import "react-toastify/dist/ReactToastify.css";
 import { CookiesProvider } from "react-cookie";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 if (process.env.NODE_ENV === "production") {
   disableReactDevTools();
@@ -13,10 +13,10 @@ if (process.env.NODE_ENV === "production") {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       {/* <CookiesProvider defaultSetOptions={{ path: "/" }}> */}
       <App />
       {/* </CookiesProvider> */}
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
