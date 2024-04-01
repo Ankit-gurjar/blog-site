@@ -13,7 +13,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      {/* <Router> */}
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/login" element={<Login />} />
@@ -23,7 +22,6 @@ function App() {
         <Route path="/create" element={<CreateBlog />} />
         <Route path="/read" element={<BlogFeed />} />
       </Routes>
-      {/* </Router> */}
     </div>
   );
 }

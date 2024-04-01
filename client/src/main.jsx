@@ -14,9 +14,9 @@ if (process.env.NODE_ENV === "production") {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <CookiesProvider defaultSetOptions={{ path: "/" }}>
-        <App />
-      </CookiesProvider>
+      {/* <CookiesProvider defaultSetOptions={{ path: "/" }}> */}
+      <App />
+      {/* </CookiesProvider> */}
     </BrowserRouter>
   </React.StrictMode>
 );
