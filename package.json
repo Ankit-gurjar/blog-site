@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": "https://blog-site-backend-fmo9.onrender.com",
   "scripts": {
     "render-postbuild": "npm install --prefix client --production=false && cd /opt/render/project/src/client && npm run build",
     "install": "npm --prefix server install server && npm --prefix client install client",
