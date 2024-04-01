@@ -42,7 +42,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${backendurl}/login`,
+        `${import.meta.env.VITE_APP_BACKEND}/login`,
         { ...inputValue },
         { withCredentials: true }
       );
