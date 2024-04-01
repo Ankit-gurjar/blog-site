@@ -35,6 +35,9 @@ const Login = () => {
       position: "bottom-left",
     });
 
+  const handlesignup = () => {
+    navigate("/signup");
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -125,9 +128,9 @@ const Login = () => {
                   </form>
                   <p className="login-card-footer-text">
                     Don't have an account?{" "}
-                    <a href="/signup" className="text-reset">
+                    <button onClick={handlesignup} className="text-reset">
                       Register here
-                    </a>
+                    </button>
                   </p>
                   <nav className="login-card-footer-nav">
                     <a href="#!">Terms of use.</a>
