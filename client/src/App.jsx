@@ -13,17 +13,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/post/:postId" element={<BlogPost />} />
-          <Route path="/create" element={<CreateBlog />} />
-          <Route path="/read" element={<BlogFeed />} />
-        </Routes>
-      </Router>
+      {/* <Router> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} exact />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/post/:postId" element={<BlogPost />} />
+        <Route path="/create" element={<CreateBlog />} />
+        <Route path="/read" element={<BlogFeed />} />
+      </Routes>
+      {/* </Router> */}
     </div>
   );
 }
